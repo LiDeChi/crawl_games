@@ -1,0 +1,5 @@
+2024/11/19-11:24:54.105 3b03 Creating DB /Users/mac/Documents/GitHub/crawl_games/chrome_user_data/Default/Local Storage/leveldb since it was missing.
+2024/11/19-11:24:54.301 3b03 Reusing MANIFEST /Users/mac/Documents/GitHub/crawl_games/chrome_user_data/Default/Local Storage/leveldb/MANIFEST-000001
+2024/11/19-11:28:11.343 3803 Level-0 table #5: started
+2024/11/19-11:28:11.376 3803 Level-0 table #5: 21641 bytes OK
+2024/11/19-11:28:11.426 3803 Delete type=0 #3

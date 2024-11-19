@@ -1,0 +1,51 @@
+[38921:259:1119/113934.009122:WARNING:chrome_main_delegate.cc(672)] This is Chrome version 131.0.6778.69 (not a warning)
+[38921:259:1119/113934.607313:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[38921:46083:1119/113934.706872:ERROR:trust_store_mac.cc(819)] Error parsing certificate:
+ERROR: Failed parsing extensions
+
+[38927:259:1119/113934.935927:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[38921:259:1119/113939.436590:INFO:CONSOLE(89)] "Will the service worker register?", source: https://play.vipgames.com/?affiliateId=wpReg (89)
+[38921:259:1119/113939.438818:INFO:CONSOLE(89)] "Yes, it did.", source: https://play.vipgames.com/?affiliateId=wpReg (89)
+[38921:259:1119/113939.471710:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
+[38921:259:1119/113941.321390:INFO:CONSOLE(140)] "Init sentry: tags vipgames production", source: https://play.vipgames.com/main.0351259d98313c85.bundle.js (140)
+[38921:259:1119/113941.322258:INFO:CONSOLE(140)] "Sentry extra context: device browser devicePlatform null extra [object Object]", source: https://play.vipgames.com/main.0351259d98313c85.bundle.js (140)
+[38927:259:1119/113941.348920:ERROR:gles2_cmd_decoder_passthrough.cc(933)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[38927:259:1119/113941.353510:ERROR:gles2_cmd_decoder_passthrough.cc(933)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[38944:259:1119/113942.112085:ERROR:system_services.cc(31)] SetApplicationIsDaemon: Error Domain=NSOSStatusErrorDomain Code=-50 "paramErr: error in user parameter list" (-50)
+[38921:259:1119/113942.378502:INFO:CONSOLE(17)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://play.vipgames.com/main.0351259d98313c85.bundle.js (17)
+[38921:259:1119/113942.379854:INFO:CONSOLE(17)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://play.vipgames.com/main.0351259d98313c85.bundle.js (17)
+[38921:259:1119/113945.984179:INFO:CONSOLE(17)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://play.vipgames.com/main.0351259d98313c85.bundle.js (17)
+[38937:68355:1119/113946.997974:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+[38921:259:1119/113947.824665:INFO:CONSOLE(16)] "Called iframe: pa.openx.net  
+Number of topics:  0", source: https://pa.openx.net/topics_frame.html?bidder=openx (16)
+[38921:259:1119/113948.010221:INFO:CONSOLE(20)] "Called iframe: ads.pubmatic.com  
+Number of topics:  0", source: https://ads.pubmatic.com/AdServer/js/topics/topics_frame.html?bidder=pubmatic (20)
+[38921:259:1119/114136.593868:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:259:1119/114136.594158:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38927:259:1119/114137.279969:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0901D0024010000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[38927:259:1119/114137.294011:ERROR:gl_utils.cc(426)] [.WebGL-0x11c0b7c6300]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[38927:259:1119/114137.322118:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0406A0024010000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[38927:259:1119/114137.331166:ERROR:gl_utils.cc(426)] [.WebGL-0x11c0aae0600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[38921:259:1119/114137.405485:INFO:CONSOLE(0)] "[GroupMarkerNotSet(crbug.com/242999)!:A0406A0024010000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.", source: https://play.vipgames.com/?affiliateId=wpReg#/game (0)
+[38921:259:1119/114137.405555:INFO:CONSOLE(0)] "[.WebGL-0x11c0aae0600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels", source: https://play.vipgames.com/?affiliateId=wpReg#/game (0)
+[38927:259:1119/114137.406437:ERROR:gl_utils.cc(426)] [.WebGL-0x11c0b7c6300]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[38927:259:1119/114140.457780:ERROR:gl_utils.cc(426)] [.WebGL-0x11c0aae0600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[38921:259:1119/114140.670819:INFO:CONSOLE(0)] "[.WebGL-0x11c0aae0600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)", source: https://play.vipgames.com/?affiliateId=wpReg#/game (0)
+[38921:259:1119/114222.738196:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:42247:1119/114228.597567:WARNING:dns_config_service_posix.cc(201)] Failed to read DnsConfig.
+[38928:9991:1119/114228.599739:WARNING:dns_config_service_posix.cc(201)] Failed to read DnsConfig.
+[38928:9991:1119/114229.722497:WARNING:dns_config_service_posix.cc(201)] Failed to read DnsConfig.
+[38921:42247:1119/114229.723794:WARNING:dns_config_service_posix.cc(201)] Failed to read DnsConfig.
+[38921:42247:1119/114242.550751:ERROR:trust_store_mac.cc(819)] Error parsing certificate:
+ERROR: Failed parsing extensions
+
+[38921:259:1119/114245.050222:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:259:1119/114245.052557:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:259:1119/114245.053351:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:259:1119/114245.056816:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:259:1119/114245.058135:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:259:1119/114245.059247:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:259:1119/114402.041944:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:259:1119/114544.082075:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38921:259:1119/114816.235008:INFO:CONSOLE(1)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://play.vipgames.com/games/domino/vendor/phaser.js (1)
+[38944:259:1119/114851.269009:WARNING:sync_reader.cc(176)] ASR: No room in socket buffer.: Broken pipe (32)
