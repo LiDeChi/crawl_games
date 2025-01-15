@@ -1,2 +1,4 @@
 /.venv
 /downloaded_resources
+/chrome_user_data
+/resource_monitor.log

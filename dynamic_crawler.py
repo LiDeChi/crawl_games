@@ -86,7 +86,7 @@ class BrowserResourceMonitor:
         else:
             return 'others'
 
-    def download_file(self, url, resource_type):
+    def download_file(self, url, resource_type, request_id=None):
         """下载资源文件"""
         try:
             # 检查是否已下载
@@ -101,7 +101,28 @@ class BrowserResourceMonitor:
             # 设置保存路径
             save_path = os.path.join(self.current_save_dir, resource_type, file_name)
             
-            # 下载文件
+            # 处理blob URL
+            if url.startswith('blob:'):
+                try:
+                    # 使用CDP命令获取blob内容
+                    result = self.driver.execute_cdp_cmd('Network.getResponseBody', {'requestId': request_id})
+                    if result and 'body' in result:
+                        if result.get('base64Encoded', False):
+                            import base64
+                            data = base64.b64decode(result['body'])
+                        else:
+                            data = result['body'].encode('utf-8')
+                        
+                        with open(save_path, 'wb') as f:
+                            f.write(data)
+                        self.downloaded_files.add(url)
+                        self.logger.info(f"成功下载blob资源: {file_name}")
+                        return True
+                except Exception as e:
+                    self.logger.error(f"下载blob资源时出错 {url}: {str(e)}")
+                    return False
+            
+            # 处理普通URL
             response = requests.get(url, stream=True, timeout=10)
             if response.status_code == 200:
                 with open(save_path, 'wb') as f:
@@ -125,6 +146,8 @@ class BrowserResourceMonitor:
         for entry in logs:
             try:
                 log = json.loads(entry['message'])['message']
+                
+                # 处理网络请求
                 if ('Network.responseReceived' in log['method'] or 
                     'Network.loadingFinished' in log['method']):
                     
@@ -136,6 +159,7 @@ class BrowserResourceMonitor:
                     url = response.get('url', '')
                     content_type = response.get('mimeType', '')
                     status = response.get('status', 0)
+                    request_id = log['params'].get('requestId')
                     
                     # 跳过非资源请求
                     if not url or url.startswith('data:') or 'chrome-extension://' in url:
@@ -155,13 +179,11 @@ class BrowserResourceMonitor:
                         continue
                     
                     resource_type = self.get_resource_type(url, content_type)
-                    self.download_file(url, resource_type)
+                    self.download_file(url, resource_type, request_id)
                     
             except KeyError:
-                # 安静地忽略键错误
                 continue
             except json.JSONDecodeError:
-                # 安静地忽略JSON解析错误
                 continue
             except Exception as e:
                 self.logger.error(f"处理网络日志时出错: {str(e)}")
